@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        /*------Color variables------*/
+        --amber_500: #ffc107;
+        --background: #000000;
+        --background_n: #f3f4f6;
+        --blue_gray_900: #44154a;
+        --deep_purple_100_02: #cebce902;
+        --deep_purple_100_33: #cebce933;
+        --deep_purple_a200_02: #8a2be202;
+        --deep_purple_a200_33: #8a2be233;
+        --deep_purple_a200_7f: #8a2be27f;
+        --gray_300: #e0e0e0;
+        --gray_400: #039be5;
+    }
+}

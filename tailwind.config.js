@@ -14,8 +14,8 @@ module.exports = {
       background_n: "var(--background_n)",
       blue_gray: { 900: "var(--blue_gray_900)" },
       deep_purple: {
-        "100_02": "var(--deep_purple_100_02)",
-        "100_33": "var(--deep_purple_100_33)",
+        100_02: "var(--deep_purple_100_02)",
+        100_33: "var(--deep_purple_100_33)",
         a200_02: "var(--deep_purple_a200_02)",
         a200_33: "var(--deep_purple_a200_33)",
         a200_7f: "var(--deep_purple_a200_7f)",
