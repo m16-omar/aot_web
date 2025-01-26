@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sign Up for Unwind Hub - Connect, Relax & Play</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#000000" />
+  <meta 
+    name="description" 
+    content="Join Unwind Hub and dive into a world of endless fun and real connections. Sign up now to relax, play, and engage with a vibrant community." 
+  />
+  
+  <link rel="stylesheet" type="text/css" href="./css/index.css" />
+  <link rel="stylesheet" type="text/css" href="./css/main.css" />
+  <link rel="stylesheet" type="text/css" href="./css/font.css" />
+</head>
+<body>
+  <!-- Main Content Section -->
+  <div class="relative h-[1034px] w-full content-end bg-background_n md:h-auto">
+    <!-- Brand Logo -->
+    <img
+      src="assets/images/img_vector.png"
+      alt="Image"
+      class="mx-auto h-[148px] w-full flex-1 object-cover"
+    />
+
+    <!-- Sign-Up here Section -->
+     <div class="absolute bottom-0 left-0 right-0 top-0 m-auto flex-1 items-center md:relative md:flex-col">
+      <!-- Sign-Up Section -->
+    <div class="flex flex-col items-center justify-center py-10">
+      <div
+        class="h-auto w-full bg-[url('assets/images/img_group_67.png')] bg-cover bg-no-repeat py-10 px-5"
+      >
+        <!-- Hero Content -->
+        <div class="text-center">
+          <img
+            src="assets/images/img_vector.png"
+            alt="Vector"
+            class="mx-auto h-[80px] w-[56%] object-contain"
+          />
+          <h1 class="text-primary text-[32px] font-bold">Unwind Hub</h1>
+          <h2 class="mt-2 text-white text-[28px] font-semibold">Join the Hub</h2>
+          <p class="mt-2 text-primary_shades text-[18px]">
+            Dive into a hub of endless fun, fresh vibes, and real connections.
+          </p>
+        </div>
+
+        <!-- Sign-Up Form -->
+        <form class="mt-10 mx-auto flex w-3/4 flex-col items-center gap-6 md:w-full">
+          <!-- Name Input -->
+          <div class="w-full flex flex-col gap-2">
+            <label for="name" class="text-high_contrast">Your Name</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Unwind Hub"
+              class="w-full rounded-[24px] border-[0.5px] border-primary px-4 py-2 text-low_contrast"
+            />
+          </div>
+
+          <!-- Email Input -->
+          <div class="w-full flex flex-col gap-2">
+            <label for="email" class="text-high_contrast">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="admin@unwindhub.com"
+              class="w-full rounded-[24px] border-[0.5px] border-primary px-4 py-2 text-low_contrast"
+            />
+          </div>
+
+          <!-- Password Input -->
+          <div class="w-full flex flex-col gap-2">
+            <label for="password" class="text-high_contrast">Password</label>
+            <div class="relative">
+              <input
+                id="password"
+                name="password"
+                type="password"
+                placeholder="********"
+                class="w-full rounded-[24px] border-[0.5px] border-primary px-4 py-2 text-low_contrast"
+              />
+              <img
+                src="assets/images/img_eye.svg"
+                alt="Show Password"
+                class="absolute right-3 top-1/2 h-[18px] w-[18px] transform -translate-y-1/2 cursor-pointer"
+              />
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <button
+            type="submit"
+            class="mt-6 w-full rounded-[24px] bg-primary px-6 py-3 text-white"
+          >
+            GET STARTED
+          </button>
+        </form>
+
+        <!-- Divider -->
+        <div class="my-6 flex items-center gap-4">
+          <div class="flex-1 h-px bg-primary_shades"></div>
+          <p class="text-primary text-center">or</p>
+          <div class="flex-1 h-px bg-primary_shades"></div>
+        </div>
+
+        <!-- Social Buttons -->
+        <div class="flex flex-col gap-4">
+          <button class="flex items-center gap-2 rounded-[24px] border-[0.5px] border-medium_contrast px-6 py-3 text-low_contrast">
+            <img src="assets/images/img_google.svg" alt="Google" class="h-[18px] w-[18px]" />
+            Sign up with Google
+          </button>
+          <button class="flex items-center gap-2 rounded-[24px] border-[0.5px] border-medium_contrast px-6 py-3 text-low_contrast">
+            <img src="assets/images/img_facebook.svg" alt="Facebook" class="h-[18px] w-[18px]" />
+            Sign up with Facebook
+          </button>
+          <button class="flex items-center gap-2 rounded-[24px] border-[0.5px] border-medium_contrast px-6 py-3 text-low_contrast">
+            <img src="assets/images/img_apple.svg" alt="Apple" class="h-[18px] w-[18px]" />
+            Sign up with Apple
+          </button>
+        </div>
+
+        <!-- Login Prompt -->
+        <p class="mt-6 text-high_contrast">
+          Already have an account?&nbsp;
+          <a href="#" class="text-primary font-bold">LOGIN</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

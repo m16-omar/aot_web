@@ -3,18 +3,235 @@
 @tailwind utilities;
 
 @layer base {
-    :root {
-        /*------Color variables------*/
-        --amber_500: #ffc107;
-        --background: #000000;
-        --background_n: #f3f4f6;
-        --blue_gray_900: #44154a;
-        --deep_purple_100_02: #cebce902;
-        --deep_purple_100_33: #cebce933;
-        --deep_purple_a200_02: #8a2be202;
-        --deep_purple_a200_33: #8a2be233;
-        --deep_purple_a200_7f: #8a2be27f;
-        --gray_300: #e0e0e0;
-        --gray_400: #039be5;
-    }
+  :root {
+    /* ------ Color variables ------ */
+    --amber-500: #ffc107;
+    --background: #000000;
+    --background-n: #f3f4f6;
+    --blue-gray-900: #44154a;
+    --deep-purple-100-02: #cebce902;
+    --deep-purple-100-33: #cebce933;
+    --deep-purple-a200-02: #8a2be202;
+    --deep-purple-a200-33: #8a2be233;
+    --deep-purple-a200-7f: #8a2be27f;
+    --gray-300: #e0e0e0;
+    --gray-400: #bebebe;
+    --high-contrast: #0a0a0a;
+    --light-blue-600: #039be5;
+    --low-contrast: #9e9e9e;
+    --medium-contrast: #333333;
+    --primary: #8a2be2;
+    --primary-shades: #cebce9;
+    --purple-600: #9234ab;
+    --white: #ffffff;
+    --black-600: #656d76;
+    --gray-shadow: #00000029;
+
+    /* ------ Shadow variables ------ */
+    --shadow-xs: 0 0 13px 5px #00000029;
+
+    /* ------ Border radius variables ------ */
+    --radius-xs: 8px;
+    --radius-sm: 12px;
+    --radius-md: 22px;
+    --radius-lg: 24px;
+    --radius-xl: 64px;
+
+    /* ------ Spacing variables ------ */
+    --space-xs: 6px;
+    --space-sm: 8px;
+    --space-md: 9px;
+    --space-lg: 10px;
+    --space-xl: 12px;
+    --space-2x1: 14px;
+    --space-3x1: 16px;
+    --space-4x1: 20px;
+    --space-5x1: 22px;
+    --space-6x1: 24px;
+    --space-7x1: 30px;
+    --space-8x1: 32px;
+    --space-9x1: 36px;
+    --space-10x1: 48px;
+    --space-11x1: 130px;
+    --space-12x1: 134px;
+    --space-13x1: 264px;
+  }
+
+  [type="text"],
+  input:where(:not([type])),
+  [type="email"],
+  [type="url"],
+  [type="password"],
+  [type="number"],
+  [type="date"],
+  [type="datetime-local"],
+  [type="month"],
+  [type="search"],
+  [type="tel"],
+  [type="time"],
+  [type="week"],
+  [multiple],
+  textarea,
+  select {
+    appearance: none;
+    background-color: transparent;
+    border: 0;
+    border-radius: unset;
+    padding: unset;
+    font-size: unset;
+    line-height: unset;
+  }
+
+  /* Override default focus colors for tailwindcss-forms https://github.com/tailwindlabs/tailwindcss-forms */
+  [type="text"]:focus,
+  [type="email"]:focus,
+  [type="url"]:focus,
+  [type="password"]:focus,
+  [type="number"]:focus,
+  [type="date"]:focus,
+  [type="search"]:focus,
+  [multiple]:focus,
+  textarea:focus,
+  select:focus {
+    --tw-ring-color:transparent;
+    border-color: transparent;
+  }
+  [type="radio"]:focus,
+  [type="checkbox"]:focus {
+    --tw-ring-color: transparent;
+  }
+}
+@layer components {
+  /*------------------------------------
+  Button CSS 
+  ------------------------------------*/
+  .ui.button.round {
+    @apply rounded-[24px];
+  }
+
+  .ui.button.size-xs {
+    @apply h-[48px] px-[34px] text-[14px];
+  }
+
+  .ui.button.fill.primary {
+    @apply bg-primary text-white;
+  }
+
+  .ui.button.bordered.low_contrast {
+    @apply border border-solid border-low_contrast text-low_contrast;
+  }
+
+  .ui.button.bordered.medium_contrast {
+    @apply border border-solid border-medium_contrast text-low_contrast;
+  }
+
+  .ui.button {
+    @apply flex flex-row items-center justify-center text-center cursor-pointer whitespace-nowrap font-neuemontreal text-[14px] rounded-[24px];
+  }
+
+  /*------------------------------
+  Selectbox CSS 
+  ---------------------------------*/
+  .ui.selectbox.square {
+    @apply rounded-[0px];
+  }
+
+  .ui.selectbox.size-xs {
+    @apply h-[22px] px-3 text-[18px];
+  }
+
+  .ui.selectbox {
+    @apply flex;
+  }
+
+  /*-----------------------------------
+  Checkbox CSS 
+  -----------------------------------*/
+  .ui.checkbox.square {
+    @apply rounded-none;
+  }
+
+  .ui.checkbox.size-xs {
+    @apply h-[22px] w-[22px] text-[14px];
+  }
+
+  .ui.checkbox {
+    @apply flex items-center gap-[5px] cursor-pointer;
+  }
+
+  /*-------------------------------
+  Input CSS 
+  ---------------------------------*/
+  .ui.input.round {
+    @apply rounded-[24px];
+  }
+
+  .ui.input.size-xs {
+    @apply h-[48px] px-3.5 text-[14px];
+  }
+
+  .ui.input.bordered.primary {
+    @apply border border-solid border-primary text-low_contrast;
+  }
+
+  .ui.input {
+    @apply flex items-center justify-center cursor-text font-neuemontreal text-[14px] border-primary border-[0.5px] border-solid rounded-[24px];
+  }
+
+  /*-----------------------------------
+    Text CSS 
+    ----------------------------------*/
+  .ui.text.size-sub_heading {
+    @apply font-neuemontreal text-[24px] font-normal md:text-[22px] sm:text-[20px];
+  }
+
+  .ui.text.size-body {
+    @apply font-neuemontreal text-[14px] font-normal;
+  }
+
+  .ui.text.size-body_regular {
+    @apply font-neuemontreal text-[18px] font-normal sm:text-[15px];
+  }
+
+  .ui.text.size-textxs {
+    @apply text-[48px] font-normal md:text-[44px] sm:text-[40px];
+  }
+
+  .ui.text.size-texts {
+    @apply text-[64px] font-normal md:text-[48px];
+  }
+
+  .ui.text.size-textmd {
+    @apply text-[80px] font-normal md:text-[48px];
+  }
+
+  .ui.text {
+    @apply text-low_contrast font-neuemontreal;
+  }
+
+  /*-----------------------------------
+   Heading CSS 
+   -----------------------------------*/
+  .ui.heading.size-heading {
+    @apply text-[32px] font-semibold md:text-[30px] sm:text-[27px];
+  }
+
+  .ui.heading.size-headingxs {
+    @apply text-[10px] font-semibold;
+  }
+
+  .ui.heading.size-headings {
+    @apply text-[21px] font-semibold sm:text-[17px];
+  }
+
+  .ui.heading {
+    @apply text-primary font-poppins;
+  }
+
+  /*---------------------------------
+   Container CSS 
+   ----------------------------------*/
+  .container-xs {
+    @apply w-full mx-auto max-w-[1052px];
+  }
 }

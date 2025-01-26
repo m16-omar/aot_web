@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Log In to Unwind Hub - Access Your World of Fun</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Log in to your Unwind Hub account to continue exploring a hub of fresh vibes and endless entertainment." />
+  <link rel="stylesheet" type="text/css" href="./css/main.css" />
+  <link rel="stylesheet" type="text/css" href="./css/tailwind.css" />
+  <link rel="stylesheet" type="text/css" href="./css/font.css" />
+</head>
+<body>
+  <!-- Login page section -->
+  <div class="relative h-[1034px] w-full bg-background_n md:h-auto">
+    <!-- Logo section -->
+    <img src="assets/images/img_group_22.png" alt="Unwind Hub Logo" class="mx-auto h-[148px] w-full object-cover" />
+    
+    <!-- Main content section -->
+    <div class="absolute inset-0 flex items-center justify-center">
+      <!-- Welcome section -->
+      <div class="h-[1034px] w-full bg-[url('../assets/images/img_group_67.png')] bg-cover bg-no-repeat py-[110px]">
+        <div class="flex flex-col items-center gap-4">
+          <div class="relative z-[1] flex items-center gap-4">
+            <img src="assets/images/img_vector.png" alt="Vector" class="h-[80px] object-contain" />
+            <h1 class="size-headingxs !text-[10.9px]">Unwind HUB</h1>
+          </div>
+          <img src="assets/images/img_light_brown_in_jacket10.png" alt="Welcome Image" class="mt-[-68px] h-[708px] w-full object-cover md:h-auto" />
+          <h2 class="size-heading !text-white sm:text-[28px]">Join the Hub</h2>
+          <p class="size-sub_heading !text-primary_shades">Dive into a hub of endless fun, fresh vibes, and real connections.</p>
+        </div>
+      </div>
+
+      <!-- Login form section -->
+      <div class="flex flex-col items-center px-14 md:px-5">
+        <h2 class="size-heading text-center !text-high_contrast sm:text-[28px]">
+          Log In to Connect<br />Relax & Play
+        </h2>
+        
+        <!-- Social login section -->
+        <div class="mt-6 flex flex-col gap-6">
+          <div class="flex flex-col gap-4">
+            <!-- Email -->
+            <div class="flex flex-col items-start gap-2">
+              <label for="email" class="size-body !text-high_contrast">Email</label>
+              <input id="email" name="email" placeholder="admin@unwindhub.com" type="email" class="input-field" />
+            </div>
+            <!-- Password -->
+            <div class="flex flex-col items-start gap-2">
+              <label for="password" class="size-body !text-high_contrast">Password</label>
+              <div class="relative">
+                <input id="password" name="password" placeholder="*********" type="password" class="input-field" />
+                <img src="assets/images/img_eye.svg" alt="Toggle Password" class="absolute right-3 top-1/2 transform -translate-y-1/2 h-[12px] w-[16px]" />
+              </div>
+            </div>
+          </div>
+          <!-- Remember me and Forgot password -->
+          <div class="flex justify-between items-center gap-5">
+            <label class="flex items-center gap-2">
+              <input type="checkbox" name="rememberme" />
+              <span>Remember me</span>
+            </label>
+            <a href="#" class="size-body !text-high_contrast">Forgot Password?</a>
+          </div>
+          <!-- Submit button -->
+          <button class="primary-btn">GET STARTED</button>
+        </div>
+
+        <div class="my-4 flex items-center justify-between">
+          <hr class="flex-1 bg-primary_shades" />
+          <span class="mx-2">or</span>
+          <hr class="flex-1 bg-primary_shades" />
+        </div>
+        
+        <!-- Sign-up options -->
+        <div class="flex flex-col gap-2">
+          <button class="social-btn google-btn">Sign up with Google</button>
+          <button class="social-btn facebook-btn">Sign up with Facebook</button>
+          <button class="social-btn apple-btn">Sign up with Apple</button>
+        </div>
+
+        <!-- Sign-up prompt -->
+        <p class="mt-4 size-body">
+          <span>New to the Hub?</span>
+          <a href="#" class="font-bold text-primary">SIGN UP</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

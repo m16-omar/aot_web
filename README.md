@@ -18,13 +18,13 @@ It uses [Tailwind CSS](https://tailwindcss.com/)
  
 This document outlines the organization of the project's files and directories. Each part of the structure serves a specific purpose in the overall architecture of the project.
 
-### public/
-The public directory is a container for all static assets that are used in the project. These assets are typically not changed by the server or by client-side scripts.
+### assets/
+The assets directory is a container for all static assets that are used in the project. These assets are typically not changed by the server or by client-side scripts.
 
-### public/images/
+### assets/images/
 This folder stores all the image files used throughout the project. This includes graphics such as icons, photographs, and logos.
 
-### public/fonts/
+### assets/fonts/
 The fonts folder holds all the custom font files that the project may require. These fonts can be referenced in the CSS files to ensure consistent typography across the project.
 
 ### css/
